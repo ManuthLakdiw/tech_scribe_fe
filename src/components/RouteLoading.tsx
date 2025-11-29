@@ -10,7 +10,7 @@ const RouteLoading = () => {
             animate={{
                 opacity: 1
             }}
-            className="w-screen h-screen flex flex-col justify-center items-center gap-8 absolute top-0 left-0">
+            className="w-screen h-screen flex flex-col justify-center items-center gap-8 absolute top-0 left-0 bg-zinc-950/50 dark:bg-white/10">
             <div className="w-[70px] h-[70px] relative">
                 <motion.div
                     className="w-[32px] h-[32px] absolute rounded-xl shadow-2xl"
