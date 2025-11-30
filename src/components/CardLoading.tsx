@@ -8,7 +8,7 @@ const CardLoading = () => {
             animate={{ opacity: 1 }}
             className="w-full min-h-full"
         >
-            <ResponsiveGrid gap={4}>
+            <ResponsiveGrid gap={4} smCols={2} mdCols={3} lgCols={4}>
                 {Array(8).fill(0).map((_, key) => (
                     <div
                         key={key}
