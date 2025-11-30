@@ -1,5 +1,19 @@
 import type { ReactNode } from "react";
 import { cn } from "../utils/cnUtil";
+import { motion } from "framer-motion";
+
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+            delayChildren: 0.2,
+        }
+    }
+};
+
 
 const gapClasses: Record<number, string> = {
     0: "gap-0",
@@ -96,9 +110,13 @@ const ResponsiveGrid = ({
 }: ResponsiveGridProps) => {
 
     return (
-        <div
+        <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="show"
+            layout={true}
             className={cn(
-                "grid",
+                "grid w-full h-full",
                 defColsMap[defCols],
                 smCols && smColsMap[smCols],
                 mdCols && mdColsMap[mdCols],
@@ -108,7 +126,7 @@ const ResponsiveGrid = ({
             )}
         >
             {children}
-        </div>
+        </motion.div>
     )
 }
 
