@@ -12,7 +12,7 @@ const Footer = () => {
                             TechScribe
                         </h1>
                         <p className={"text-sm font-light text-neutral-500 dark:text-neutral-400"}>
-                            A modern platform for developers to share <br/> knowledge, learn from experts, and grow <br/> together.
+                            A modern platform for developers to share <span className={"block md:inline xl:block"}> knowledge, learn from experts, and grow </span> together.
                         </p>
                     </div>
                    <div className={"flex gap-4"}>
