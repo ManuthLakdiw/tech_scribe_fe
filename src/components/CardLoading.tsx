@@ -13,15 +13,15 @@ const CardLoading = () => {
                     <div
                         key={key}
                         className="h-[350px]
-                                   bg-white dark:bg-[#1C1C1C]
+                                   bg-light-secondary dark:bg-dark-secondary
                                    rounded-xl
-                                   border border-neutral-200 dark:border-white/10
+                                   border border-neutral-soft dark-border
                                    overflow-hidden relative
                                    animate-pulse"
 
                     >
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 dark:via-white/5 to-transparent"
+                            className="absolute inset-0 bg-gradient-to-r from-transparent via-overlay-light dark:via-overlay-light to-transparent"
                             animate={{
                                 x: ["-100%", "100%"]
                             }}
@@ -36,7 +36,7 @@ const CardLoading = () => {
                         <div
                             className="
                                 w-full h-[160px]
-                                bg-neutral-200 dark:bg-[#2A2A2A]
+                                bg-neutral-soft dark:bg-[#2A2A2A]
                                 absolute top-8
                             "
                         />
@@ -45,7 +45,7 @@ const CardLoading = () => {
                             <div
                                 className="
                                     w-1/2 h-5
-                                    bg-neutral-200 dark:bg-[#2A2A2A]
+                                    bg-neutral-soft dark:bg-[#2A2A2A]
                                     rounded-md
                                 "
                             />
@@ -53,7 +53,7 @@ const CardLoading = () => {
                             <div
                                 className="
                                     w-full h-7
-                                    bg-neutral-200 dark:bg-[#2A2A2A]
+                                    bg-neutral-soft dark:bg-[#2A2A2A]
                                     rounded-md
                                 "
                             />
@@ -61,7 +61,7 @@ const CardLoading = () => {
                             <div
                                 className="
                                     w-2/3 h-4
-                                    bg-neutral-200 dark:bg-[#2A2A2A]
+                                    bg-neutral-soft dark:bg-[#2A2A2A]
                                     rounded-md
                                 "
                             />
