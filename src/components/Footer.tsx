@@ -10,7 +10,7 @@ const Footer = () => {
             <ResponsiveGrid defCols={2} mdCols={6} className={"gap-10"} >
                 <div className="flex flex-col col-span-2 md:col-span-2 lg:col-span-2 gap-4">
                     <div className={"flex flex-col gap-4"}>
-                        <h1 className={"font-bold text-[1.7rem] bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end " +
+                        <h1 className={"font-bold text-2xl bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end " +
                             "bg-clip-text text-transparent"}
                         >
                             TechScribe
