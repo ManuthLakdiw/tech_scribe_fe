@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme{
+    --color-dark-primary: #0A0A0A; /* neutral-950 */
+    --color-light-primary: #f5f5f5; /* neutral-100 */
 
-@utility icon-wrapper{
-    @apply p-[0.6rem] bg-neutral-100 dark:bg-white/10 rounded-full text-neutral-500 dark:text-neutral-400 hover:text-[#1C1C1C] dark:hover:text-neutral-200 cursor-pointer transition-all duration-300 flex items-center justify-center;
+    --color-dark-secondary: #1C1C1C; /* neutral-900 */
+    --color-light-secondary: #FFFFFF; /* white */
+
+    --color-gradient-start: #6366F1; /* indigo-500 */
+    --color-gradient-mid: #A855F7; /* purple-500 */
+    --color-gradient-end: #EC4899; /* pink-500 */
+
+    --color-neutral-strong: #737373; /* neutral-500 */
+    --color-neutral-medium: #A3A3A3; /* neutral-400 */
+    --color-neutral-soft: #E5E5E5; /* neutral-200 ->  border-light mode */
+
+    --color-overlay-light: #ffffff0d; /* white/5 */
+
+    --font-secondary: 'Geist Mono', monospace;
 }
+
+@utility dark-border{
+    @apply dark:border-white/10;
+}
+
+
+
