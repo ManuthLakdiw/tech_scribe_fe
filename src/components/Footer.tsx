@@ -4,7 +4,7 @@ import {Github, Linkedin, Mail, Twitter} from "lucide-react";
 
 const Footer = () => {
     return (
-        <div className={"w-full min-h-1/3 bg-white dark:bg-[#1C1C1C] border-t border-neutral-200 dark:border-white/10  pt-14 px-4 lg:px-22 flex flex-col gap-10"}>
+        <div className={"w-full min-h-1/3 bg-white dark:bg-dark-techScribe border-t border-neutral-200 dark:border-white/10  pt-11 px-4 lg:px-20 flex flex-col gap-10"}>
             <ResponsiveGrid defCols={2} mdCols={6} className={"gap-10"} >
                 <div className="flex flex-col col-span-2 md:col-span-2 lg:col-span-2 gap-4">
                     <div className={"flex flex-col gap-4"}>
@@ -47,45 +47,61 @@ const Footer = () => {
 
                 </div>
                 <div className="flex flex-col gap-4 col-span-1">
-                    <h2 className={"font-medium dark:text-white"}>Product</h2>
+                    <h2 className={"font-medium text-dark-techScribe dark:text-white"}>Product</h2>
                     <div className={"flex flex-col gap-3 font-light text-sm text-neutral-500 dark:text-neutral-400 cursor-pointer"}>
-                        <p>Features</p>
-                        <p>Blog</p>
-                        <p>Categories</p>
-                        <p>Pricing</p>
+                        {["Features", "Blog", "Categories", "Pricing"].map((item, index) => (
+                            <p
+                                key={index}
+                                className="hover:text-dark-techScribe dark:hover:text-white transition-all duration-300 cursor-pointer"
+                            >
+                                {item}
+                            </p>
+                        ))}
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <h2 className={"font-medium dark:text-white"}>Company</h2>
+                    <h2 className={"font-medium text-dark-techScribe dark:text-white"}>Company</h2>
                     <div className={"flex flex-col gap-3 font-light text-sm text-neutral-500 dark:text-neutral-400 cursor-pointer"}>
-                        <p>About</p>
-                        <p>Contact</p>
-                        <p>Careers</p>
-                        <p>Press</p>
+                        {["About", "Contact", "Careers", "Press"].map((item, index) => (
+                            <p
+                                key={index}
+                                className="hover:text-dark-techScribe dark:hover:text-white transition-all duration-300 cursor-pointer"
+                            >
+                                {item}
+                            </p>
+                        ))}
                     </div>
                 </div>
                 <div className={"flex flex-col gap-4"}>
-                    <h2 className={"font-medium dark:text-white"}>Resources</h2>
-                    <div className={"flex flex-col gap-3 font-light text-sm text-neutral-500 dark:text-neutral-400 cursor-pointer"}>
-                        <p>Documentation</p>
-                        <p>Help Center</p>
-                        <p>Community</p>
-                        <p>Guides</p>
+                    <h2 className={"font-medium text-dark-techScribe dark:text-white"}>Resources</h2>
+                    <div className={"flex flex-col items-start gap-3 font-light text-sm text-neutral-500 dark:text-neutral-400"}>
+                        {["Documentation", "Help Center", "Community", "Guides"].map((item, index) => (
+                            <p
+                                key={index}
+                                className="hover:text-dark-techScribe dark:hover:text-white transition-all duration-300 cursor-pointer"
+                            >
+                                {item}
+                            </p>
+                        ))}
                     </div>
                 </div>
-                <div className={"flex flex-col gap-4"}>
+                <div className={"flex flex-col text-dark-techScribe gap-4"}>
                     <h2 className={"font-medium dark:text-white"}>Legal</h2>
                     <div className={"flex flex-col gap-3 font-light text-sm text-neutral-500 dark:text-neutral-400 cursor-pointer"}>
-                        <p>Privacy</p>
-                        <p>Terms</p>
-                        <p>Cookies</p>
-                        <p>License</p>
+                        {["Privacy", "Terms", "Cookies", "License"].map((item, index) => (
+                            <p
+                                key={index}
+                                className="hover:text-dark-techScribe dark:hover:text-white transition-all duration-300 cursor-pointer"
+                            >
+                                {item}
+                            </p>
+                        ))}
                     </div>
                 </div>
             </ResponsiveGrid>
-            <div className={"w-full py-6 border-t border-neutral-200 dark:border-white/10 flex justify-center sm:justify-between font-light text-sm text-neutral-400 dark:text-neutral-300 flex-wrap "}>
-                <p className={"p-2"}>©2025 TechScribe. All rights reserved.</p>
-                <p className={"p-2"}>Built with ❤️ for developers worldwide</p>
+            <div className={"w-full py-6 border-t border-neutral-200 dark:border-white/10 flex justify-center sm:justify-between gap-y-3 gap-x-20 flex-wrap font-light text-sm text-neutral-500 dark:text-neutral-400 text-center"}>
+                <p>©2025 TechScribe. All rights reserved.</p>
+                <p>Built with ❤️ for developers worldwide</p>
 
             </div>
         </div>
