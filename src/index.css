@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@vercel/og-fonts@latest/dist/geist-sans.css');
 
 @import "tailwindcss";
 
@@ -21,7 +21,7 @@
 
     --color-overlay-light: #ffffff0d; /* white/5 */
 
-    --font-secondary: 'Geist Mono', monospace;
+    --font-secondary: 'Geist Sans', sans-serif;
 }
 
 @utility dark-border{
