@@ -96,6 +96,7 @@ interface ResponsiveGridProps {
     mdCols?: number;
     lgCols?: number;
     className?: string;
+
 }
 
 const ResponsiveGrid = ({
@@ -114,7 +115,7 @@ const ResponsiveGrid = ({
             variants={containerVariants}
             initial="hidden"
             animate="show"
-            layout={true}
+            // layout={true}
             className={cn(
                 "grid w-full h-full",
                 defColsMap[defCols],
