@@ -1,0 +1,49 @@
+:root {
+    --hljs-bg: rgb(245, 245, 245);
+    --hljs-text: #383a42;
+    --hljs-keyword: #a626a4;
+    --hljs-function: #4078f2;
+    --hljs-string: #50a14f;
+    --hljs-title: #4078f2;
+    --hljs-attr: #986801;
+    --hljs-comment: #a0a1a7;
+    --hljs-number: #986801;
+    --hljs-tag: #e45649;
+    --hljs-border: #e5e7eb;
+}
+
+.dark {
+    --hljs-bg: #282c34;
+    --hljs-text: #abb2bf;
+    --hljs-keyword: #c678dd;
+    --hljs-function: #61afef;
+    --hljs-string: #98c379;
+    --hljs-title: #61afef;
+    --hljs-attr: #d19a66;
+    --hljs-comment: #5c6370;
+    --hljs-number: #d19a66;
+    --hljs-tag: #e06c75;
+    --hljs-border: #3e4451;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1.5em;
+    background: var(--hljs-bg);
+    color: var(--hljs-text);
+    border-radius: 0.75rem; /* Rounded Corners */
+    border: 1px solid var(--hljs-border); /* Border එකක් */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.hljs-keyword, .hljs-operator { color: var(--hljs-keyword); }
+.hljs-function, .hljs-title, .hljs-section { color: var(--hljs-function); }
+.hljs-string, .hljs-regexp, .hljs-symbol { color: var(--hljs-string); }
+.hljs-attr, .hljs-variable, .hljs-template-variable { color: var(--hljs-attr); }
+.hljs-comment, .hljs-quote, .hljs-meta { color: var(--hljs-comment); font-style: italic; }
+.hljs-number, .hljs-literal { color: var(--hljs-number); }
+.hljs-tag, .hljs-name { color: var(--hljs-tag); }
