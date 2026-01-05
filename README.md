@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# ✍️ TechScribe - Modern Technical Blogging Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![TechScribe Banner](https://via.placeholder.com/1200x400?text=TechScribe+Platform+Preview)
 
-Currently, two official plugins are available:
+**TechScribe** is a feature-rich, full-stack MERN (MongoDB, Express, React, Node.js) blogging platform tailored for the developer community. It empowers users to share knowledge through technical articles, supports role-based access (User, Author, Admin), and leverages AI for content creation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+- **Frontend:** [https://tech-scribe-frontend.vercel.app](https://tech-scribe-frontend.vercel.app) *(Replace with your link)*
+- **Backend API:** [https://tech-scribe-api.onrender.com](https://tech-scribe-api.onrender.com) *(Replace with your link)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### **Frontend**
+- **Framework:** React.js (Vite) + TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion (@use-gesture/react for 3D gallery)
+- **Routing:** React Router DOM v6
+- **State Management:** React Context API
+- **HTTP Client:** Axios
+- **Markdown:** `react-markdown`, `rehype-highlight`, `remark-gfm`
+- **UI Components:** Lucide React (Icons), Sonner (Toasts)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### **Backend**
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** MongoDB (Mongoose)
+- **Authentication:** JWT (JSON Web Tokens) & Cookies
+- **File Storage:** Cloudinary (via Multer)
+- **AI Integration:** Google Gemini API (Text), Pollinations.ai (Images)
+- **Security:** Bcrypt.js, CORS, Helmet
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✨ Key Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🟢 For Readers (Users)
+- **Authentication:** Secure Sign Up/Login with JWT.
+- **Profile Management:** Update bio, change profile & cover photos.
+- **Infinite Scrolling:** Seamless reading experience with optimized pagination.
+- **Categorized Content:** Browse articles by tech stacks (Web Dev, AI, DevOps, etc.).
+- **Interactions:** Like posts and comment system.
+- **Become an Author:** Submit applications (with resume upload) to become a writer.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🟡 For Writers (Authors)
+- **Markdown Editor:** Write rich text content easily.
+- **AI Assistant:** - Generate full blog posts (Title, Content, Excerpt) using **Gemini AI**.
+    - Auto-generate photorealistic cover images using **Pollinations.ai (Flux Model)**.
+- **Dashboard:** Manage drafts, published posts, and view read counts.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔴 For Admins
+- **Admin Dashboard:** Visual statistics (Users, Posts, Likes, Comments).
+- **User Management:** Block/Unblock users.
+- **Content Moderation:** Approve/Reject comments.
+- **Request Handling:** Review "Become Author" requests with document downloads and Approve/Reject actions.
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+- Node.js (v18+)
+- MongoDB (Local or Atlas)
+- Cloudinary Account
+- Google Gemini API Key
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/yourusername/tech-scribe.git](https://github.com/yourusername/tech-scribe.git)
+cd tech-scribe
