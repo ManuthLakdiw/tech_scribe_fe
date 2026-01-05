@@ -4,13 +4,21 @@ import {Github, Linkedin, Mail, Twitter} from "lucide-react";
 
 const Footer = () => {
     return (
-        <div className={"w-full min-h-1/3 bg-light-secondary dark:bg-dark-secondary border-t border-neutral-soft" +
-            " dark-border pt-11 px-4 lg:px-20 flex flex-col gap-10"}
+        <motion.footer
+            initial={{ opacity: 0, y: 50 }}
+
+            whileInView={{ opacity: 1, y: 0 }}
+
+            transition={{ duration: 0.8, ease: "easeOut" }}
+
+            viewport={{ once: true }}
+            className={"w-full min-h-1/3 bg-light-secondary dark:bg-dark-secondary border-t border-neutral-soft" +
+            " dark-border pt-11 px-4 lg:px-20 flex flex-col gap-10 theme-transition"}
         >
             <ResponsiveGrid defCols={2} mdCols={6} className={"gap-10"} >
                 <div className="flex flex-col col-span-2 md:col-span-2 lg:col-span-2 gap-4">
                     <div className={"flex flex-col gap-4"}>
-                        <h1 className={"font-bold text-2xl bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end " +
+                        <h1 className={"font-bold text-2xl bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end w-fit " +
                             "bg-clip-text text-transparent"}
                         >
                             TechScribe
@@ -65,7 +73,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-4 col-span-1">
                     <h2 className={"font-medium text-dark-secondary  dark:text-light-secondary"}>Product</h2>
                     <div className={"flex flex-col gap-3 font-light text-sm text-neutral-strong dark:text-neutral-medium cursor-pointer"}>
-                        {["Features", "Blog", "Categories", "Pricing"].map((item, index) => (
+                        {["Features", "Blog", "CategoriesSection", "Pricing"].map((item, index) => (
                             <p
                                 key={index}
                                 className="hover:text-dark-secondary dark:hover:text-neutral-soft transition-all duration-300 cursor-pointer"
@@ -122,7 +130,7 @@ const Footer = () => {
                 <p>Built with ❤️ for developers worldwide</p>
 
             </div>
-        </div>
+        </motion.footer>
     )
 }
 
