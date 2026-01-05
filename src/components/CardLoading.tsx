@@ -1,15 +1,26 @@
 import { motion } from "framer-motion";
 import ResponsiveGrid from "./ResponsiveGrid.tsx";
 
-const CardLoading = () => {
+
+
+
+const CardLoading = ({numberOfCards = 8, xs, sm, md, lg, gap}:
+                     {
+                        numberOfCards:number
+                        gap?:number
+                        xs?:number
+                        sm?:number,
+                        md:number,
+                        lg:number,
+                     }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="w-full min-h-full"
         >
-            <ResponsiveGrid gap={4} smCols={2} mdCols={3} lgCols={4}>
-                {Array(8).fill(0).map((_, key) => (
+            <ResponsiveGrid gap={gap} defCols={xs} smCols={sm} mdCols={md} lgCols={lg}>
+                {Array(numberOfCards).fill(0).map((_, key) => (
                     <div
                         key={key}
                         className="h-[350px]
@@ -17,7 +28,7 @@ const CardLoading = () => {
                                    rounded-xl
                                    border border-neutral-soft dark-border
                                    overflow-hidden relative
-                                   animate-pulse"
+                                   animate-pulse theme-transition"
 
                     >
                         <motion.div
