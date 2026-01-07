@@ -13,6 +13,8 @@ export interface User {
     roles: string[];
     createdAt: string;
     updatedAt: string;
+    shortName: string;
+    color: string;
 }
 
 interface AuthState {

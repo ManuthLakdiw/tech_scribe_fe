@@ -5,7 +5,8 @@ import {refreshToken} from "@/services/auth.ts";
 
 
 const api:AxiosInstance = axios.create({
-    baseURL: 'http://localhost:5001/api/v1',
+    // baseURL: 'http://localhost:5001/api/v1',
+    baseURL: `https://tech-scribe-be.vercel.app/api/v1`
 })
 
 const PUBLIC_ENDPOINTS = ["auth/login", "auth/register"];
