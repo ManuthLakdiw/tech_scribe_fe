@@ -2,6 +2,10 @@
 
 **TechScribe** is a feature-rich, full-stack MERN (MongoDB, Express, React, Node.js) blogging platform tailored for the developer community. It empowers users to share knowledge through technical articles, supports role-based access (User, Author, Admin), and leverages AI for content creation.
 
+> ### 🔗 **Project Links**
+> 💻 **[Frontend Repository](https://github.com/ManuthLakdiw/tech_scribe_fe)** &nbsp; | &nbsp; ⚙️ **[Backend Repository](https://github.com/ManuthLakdiw/tech_scribe_be)** &nbsp;
+---
+
 ## 🛠️ Technologies Used
 
 ### **Frontend**
@@ -38,7 +42,7 @@
 ### 🟡 For Writers (Authors)
 - **Markdown Editor:** Write rich text content easily.
 - **AI Assistant:** - Generate full blog posts (Title, Content, Excerpt) using **Gemini AI**.
-    - Auto-generate photorealistic cover images using **Pollinations.ai (Flux Model)**.
+  - Auto-generate photorealistic cover images using **Pollinations.ai (Flux Model)**.
 - **Dashboard:** Manage drafts, published posts, and view read counts.
 
 ### 🔴 For Admins
@@ -47,6 +51,8 @@
 - **Content Moderation:** Approve/Reject comments.
 - **Request Handling:** Review "Become Author" requests with document downloads and Approve/Reject actions.
 
+---
+
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
@@ -54,4 +60,3 @@
 - MongoDB (Local or Atlas)
 - Cloudinary Account
 - Google Gemini API Key
-
