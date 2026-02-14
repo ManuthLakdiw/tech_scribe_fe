@@ -6,8 +6,8 @@
 
 ## 🚀 Live Demo
 
-- **Frontend:** [https://tech-scribe-frontend.vercel.app](https://tech-scribe-frontend.vercel.app) *(Replace with your link)*
-- **Backend API:** [https://tech-scribe-api.onrender.com](https://tech-scribe-api.onrender.com) *(Replace with your link)*
+- **Frontend:** [https://tech-scribe-frontend.vercel.app](https://tech-scribe-frontend.vercel.app) 
+- **Backend API:** [https://tech-scribe-api.onrender.com](https://tech-scribe-api.onrender.com) 
 
 ---
 
