@@ -1,15 +1,6 @@
 # ✍️ TechScribe - Modern Technical Blogging Platform
 
-![TechScribe Banner](https://via.placeholder.com/1200x400?text=TechScribe+Platform+Preview)
-
 **TechScribe** is a feature-rich, full-stack MERN (MongoDB, Express, React, Node.js) blogging platform tailored for the developer community. It empowers users to share knowledge through technical articles, supports role-based access (User, Author, Admin), and leverages AI for content creation.
-
-## 🚀 Live Demo
-
-- **Frontend:** [https://tech-scribe-frontend.vercel.app](https://tech-scribe-frontend.vercel.app) 
-- **Backend API:** [https://tech-scribe-api.onrender.com](https://tech-scribe-api.onrender.com) 
-
----
 
 ## 🛠️ Technologies Used
 
