@@ -55,7 +55,3 @@
 - Cloudinary Account
 - Google Gemini API Key
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/yourusername/tech-scribe.git](https://github.com/yourusername/tech-scribe.git)
-cd tech-scribe
