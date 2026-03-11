@@ -3,8 +3,7 @@
 **TechScribe** is a feature-rich, full-stack MERN (MongoDB, Express, React, Node.js) blogging platform tailored for the developer community. It empowers users to share knowledge through technical articles, supports role-based access (User, Author, Admin), and leverages AI for content creation.
 
 > ### 🔗 **Project Links**
-> 💻 **[Frontend Repository](https://github.com/ManuthLakdiw/tech_scribe_fe)** &nbsp; | &nbsp; ⚙️ **[Backend Repository](https://github.com/ManuthLakdiw/tech_scribe_be)** &nbsp;
----
+> 💻 **[Frontend Repository](https://github.com/ManuthLakdiw/tech_scribe_fe)** &nbsp; | &nbsp; ⚙️ **[Backend Repository](https://github.com/ManuthLakdiw/tech_scribe_be)** &nbsp; | &nbsp; 📥 **[Download PDF Report](https://github.com/user-attachments/files/25894978/pdf.pdf)**
 
 ## 🛠️ Technologies Used
 
